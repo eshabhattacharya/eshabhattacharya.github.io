@@ -31,12 +31,21 @@
         Optional pull-quote or “note to self.”
       </blockquote>
     </section>
+    <p class="footer">
+      © <span id="year"></span> Esha Bhattacharya · Last updated: <span id="updated"></span>
+    </p>
 
-    <p class="footer">© <span id="year"></span> Your Name</p>
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('updated').textContent = now.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
   </script>
 </body>
 </html>
+
