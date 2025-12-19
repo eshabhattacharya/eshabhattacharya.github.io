@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Idea 1 — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Idea 1: Replace this title</h1>
+      <p>Optional subtitle / date.</p>
+      <nav class="nav">
+        <a href="index.html">Bio</a>
+        <a href="ideas.html">Ideas</a>
+      </nav>
+    </header>
+
+    <article class="card">
+      <p>Paste your text here.</p>
+      <p>Add more paragraphs as you like.</p>
+    </article>
+
+    <p class="footer">© <span id="year"></span> Your Name</p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
