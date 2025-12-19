@@ -3,34 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Esha Bhattacharya</title>
+  <title>Your Name</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-grid">
   <div class="container">
     <header class="header">
-      <h1>Esha Bhattacharya</h1>
-      <p>Short tagline — what you do / what you’re interested in.</p>
+      <div class="kicker">/ home · bio</div>
+      <h1>Your Name</h1>
+      <p class="subtitle">Short tagline — what you’re building / exploring.</p>
+
       <nav class="nav">
-        <a href="index.html">Bio</a>
-        <a href="ideas.html">Ideas</a>
+        <a href="index.html">[bio]</a>
+        <a href="ideas.html">[ideas]</a>
+        <a href="mailto:you@example.com">[email]</a>
+        <a href="https://github.com/yourusername">[github]</a>
       </nav>
+
+      <hr class="rule">
+      <div class="ascii">========================================</div>
     </header>
 
-    <section class="card">
+    <section class="section">
       <h2>Bio</h2>
       <p>
-        Paste your bio here. You can write a few paragraphs about who you are,
-        what you’re working on, and what you care about.
+        Paste your bio here. Keep it short and sharp—2–6 sentences is perfect.
       </p>
+      <p>
+        Optional: add a sentence about what you’re curious about lately.
+      </p>
+    </section>
 
-      <hr>
+    <section class="section">
+      <h2>Now</h2>
+      <ul>
+        <li>Thing you’re working on</li>
+        <li>Thing you’re learning</li>
+        <li>Thing you’re reading</li>
+      </ul>
+      <p class="meta">Last updated: <span id="updated"></span></p>
+    </section>
 
+    <section class="section">
       <h2>Links</h2>
       <p>
-        <a href="https://github.com/yourusername">GitHub</a> ·
         <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> ·
-        <a href="mailto:you@example.com">Email</a>
+        <a href="https://twitter.com/yourhandle">Twitter/X</a> ·
+        <a href="mailto:you@example.com">you@example.com</a>
       </p>
     </section>
 
@@ -39,6 +58,7 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toLocaleDateString();
   </script>
 </body>
 </html>
