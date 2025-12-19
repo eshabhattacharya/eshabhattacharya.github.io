@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --bg0: #070A12;          /* deep navy */
-  --bg1: #0B1022;          /* slightly lighter */
-  --text: #E7ECFF;         /* soft white */
-  --muted: rgba(231,236,255,0.65);
-  --line: rgba(231,236,255,0.14);
-  --dash: rgba(231,236,255,0.22);
-  --accent: #7CF7D4;       /* mint “web3” */
-  --accent2: #8AA6FF;      /* electric blue */
-  --code: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bg0: #070A12;
+  --bg1: #0B1022;
+  --text: #E9ECFF;
+  --muted: rgba(233,236,255,0.65);
+  --line: rgba(233,236,255,0.14);
+  --dash: rgba(233,236,255,0.22);
+  --accent: #7CF7D4;
+  --accent2: #8AA6FF;
+  --mono: "Azeret Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 *{ box-sizing:border-box; }
@@ -17,11 +17,13 @@
 html, body{
   margin:0;
   padding:0;
-  background: radial-gradient(1200px 800px at 20% 10%, rgba(138,166,255,0.12), transparent 60%),
-              radial-gradient(900px 700px at 85% 30%, rgba(124,247,212,0.10), transparent 55%),
-              linear-gradient(180deg, var(--bg0), var(--bg1));
+  min-height:100%;
+  background:
+    radial-gradient(1200px 800px at 20% 10%, rgba(138,166,255,0.12), transparent 60%),
+    radial-gradient(900px 700px at 85% 30%, rgba(124,247,212,0.10), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
   color: var(--text);
-  font-family: var(--code);
+  font-family: var(--mono);
   line-height: 1.75;
 }
 
@@ -31,16 +33,16 @@ html, body{
   padding: 44px 18px 70px;
 }
 
-/* subtle grid */
+/* subtle grid overlay */
 body::before{
   content:"";
   position: fixed;
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(231,236,255,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(231,236,255,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
+    linear-gradient(to right, rgba(233,236,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(233,236,255,0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
   mask-image: radial-gradient(circle at 30% 20%, rgba(0,0,0,1), rgba(0,0,0,0.2) 55%, rgba(0,0,0,0) 75%);
 }
 
@@ -49,17 +51,17 @@ body::before{
 .kicker{
   font-size: 0.9rem;
   color: var(--muted);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 h1, h2{
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   margin: 0 0 10px;
 }
 
-h1{ font-size: 1.7rem; }
-h2{ font-size: 1.05rem; color: var(--text); }
+h1{ font-size: 1.65rem; }
+h2{ font-size: 1.05rem; }
 
 .subtitle{
   margin: 0 0 14px;
@@ -69,14 +71,14 @@ h2{ font-size: 1.05rem; color: var(--text); }
 .nav{
   display:flex;
   flex-wrap:wrap;
-  gap: 10px 14px;
+  gap: 10px 16px;
   font-size: 0.95rem;
 }
 
 .nav a{
   color: var(--text);
   text-decoration: none;
-  padding: 2px 0;
+  padding-bottom: 2px;
   border-bottom: 1px solid transparent;
 }
 
@@ -108,9 +110,7 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  text-decoration: underline;
-}
+a:hover{ text-decoration: underline; }
 
 .list{
   list-style:none;
@@ -127,7 +127,7 @@ a:hover{
 
 .list a{
   color: var(--text);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .list a:hover{
@@ -136,19 +136,4 @@ a:hover{
 
 .meta{
   margin-top: 6px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-.footer{
-  margin-top: 26px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-blockquote{
-  margin: 14px 0;
-  padding: 0 0 0 14px;
-  border-left: 3px solid var(--line);
-  color: var(--muted);
-}
+  font-
