@@ -52,17 +52,10 @@
     </section>
 
     <p class="footer">
-      © <span id="year"></span> Esha Bhattacharya · Last updated: <span id="updated"></span>
-    </p>
+      © <span id="year"></span> Esha Bhattacharya</p>
   </div>
   <script>
-    const now = new Date();
-    document.getElementById('year').textContent = now.getFullYear();
-    document.getElementById('updated').textContent = now.toLocaleDateString(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "numeric"
-    });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
