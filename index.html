@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name</title>
+  <title>Esha Bhattacharya!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-grid">
   <div class="container">
     <header class="header">
       <div class="kicker">/ home · bio</div>
-      <h1>Your Name</h1>
+      <h1>Esha Bhattacharya</h1>
       <p class="subtitle">Short tagline — what you’re building / exploring.</p>
 
       <nav class="nav">
         <a href="index.html">[bio]</a>
         <a href="ideas.html">[ideas]</a>
-        <a href="mailto:you@example.com">[email]</a>
-        <a href="https://github.com/yourusername">[github]</a>
+        <a href="mailto:eshab99@gmail.com">[email]</a>
       </nav>
 
       <hr class="rule">
@@ -47,18 +46,23 @@
     <section class="section">
       <h2>Links</h2>
       <p>
-        <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> ·
-        <a href="https://twitter.com/yourhandle">Twitter/X</a> ·
-        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://www.linkedin.com/in/eshabhattacharya/">LinkedIn</a> ·
+        <a href="mailto:eshab99@gmail.com">eshab99@gmail.com</a>
       </p>
     </section>
 
-    <p class="footer">© <span id="year"></span> Your Name</p>
+    <p class="footer">
+      © <span id="year"></span> Esha Bhattacharya · Last updated: <span id="updated"></span>
+    </p>
   </div>
-
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('updated').textContent = new Date().toLocaleDateString();
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('updated').textContent = now.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
   </script>
 </body>
 </html>
