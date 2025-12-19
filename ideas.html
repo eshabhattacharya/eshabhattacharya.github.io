@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ideas — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Ideas</h1>
+      <p>Short notes and drafts. Click a title to read.</p>
+      <nav class="nav">
+        <a href="index.html">Bio</a>
+        <a href="ideas.html">Ideas</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <ul class="list">
+        <li><a href="idea-1.html">Idea 1: Replace this title</a></li>
+        <li><a href="idea-2.html">Idea 2: Replace this title</a></li>
+        <li><a href="idea-3.html">Idea 3: Replace this title</a></li>
+      </ul>
+      <p class="footer">Tip: to add a new idea, create <strong>idea-4.html</strong> and add a link here.</p>
+    </section>
+
+    <p class="footer">© <span id="year"></span> Your Name</p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
