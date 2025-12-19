@@ -7,8 +7,8 @@
   --muted: rgba(233,236,255,0.65);
   --line: rgba(233,236,255,0.14);
   --dash: rgba(233,236,255,0.22);
-  --accent: #7CF7D4;
-  --accent2: #8AA6FF;
+  --accent: #4DA3FF;
+  --accent2: #7FB8FF;
   --mono: "Azeret Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
@@ -76,13 +76,14 @@ h2{ font-size: 1.05rem; }
 }
 
 .nav a{
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
 }
 
 .nav a:hover{
+  color: var(--accent2);
   border-bottom-color: var(--dash);
 }
 
@@ -126,7 +127,7 @@ a:hover{ text-decoration: underline; }
 .list li:last-child{ border-bottom: none; }
 
 .list a{
-  color: var(--text);
+  color: var(--accent);
   font-weight: 600;
 }
 
