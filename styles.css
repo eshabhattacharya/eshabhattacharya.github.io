@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 :root{
   --bg0: #070A12;
@@ -9,12 +9,7 @@
   --dash: rgba(233,236,255,0.22);
   --accent: #4DA3FF;
   --accent2: #7FB8FF;
-  --mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-}
-
-html, body {
-  letter-spacing: 0.01em;
-  line-height: 1.65;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 
@@ -25,12 +20,13 @@ html, body{
   padding:0;
   min-height:100%;
   background:
-    radial-gradient(1200px 800px at 20% 10%, rgba(138,166,255,0.12), transparent 60%),
-    radial-gradient(900px 700px at 85% 30%, rgba(124,247,212,0.10), transparent 55%),
-    linear-gradient(180deg, var(--bg0), var(--bg1));
+    radial-gradient(900px 600px at 20% 15%, rgba(77,163,255,0.14), transparent 60%),
+    radial-gradient(700px 500px at 80% 30%, rgba(127,184,255,0.10), transparent 55%),
+    linear-gradient(180deg, #070A12 0%, #0B1022 100%);
   color: var(--text);
   font-family: var(--mono);
-  line-height: 1.75;
+  letter-spacing: 0.01em;
+  line-height: 1.65;
 }
 
 .container{
@@ -46,11 +42,21 @@ body::before{
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(233,236,255,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(233,236,255,0.04) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(circle at 30% 20%, rgba(0,0,0,1), rgba(0,0,0,0.2) 55%, rgba(0,0,0,0) 75%);
+    linear-gradient(to right, rgba(233,236,255,0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(233,236,255,0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(
+    circle at 30% 20%, 
+    rgba(0,0,0,1), 
+    rgba(0,0,0,0.35) 55%, 
+    rgba(0,0,0,0) 75%);
 }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga" 1;
+}
+
 
 .header{ margin-bottom: 18px; }
 
@@ -64,9 +70,16 @@ h1, h2{
   font-weight: 600;
   letter-spacing: 0.04em;
   margin: 0 0 10px;
+  text-shadow:
+    0 0 6px rgba(77,163,255,0.35),
+    0 0 14px rgba(77,163,255,0.15);
 }
 
-h1{ font-size: 1.65rem; }
+h1{ font-size: 1.65rem; 
+   text-shadow:
+     0 0 8px rgba(77,163,255,0.45),
+     0 0 20px rgba(77,163,255,0.2);
+}
 h2{ font-size: 1.05rem; }
 
 .subtitle{
@@ -117,7 +130,10 @@ a{
   text-decoration: none;
 }
 
-a:hover{ text-decoration: underline; }
+a:hover{
+  text-decoration: underline;
+  text-shadow: 0 0 6px rgba(77,163,255,0.35);
+}
 
 .list{
   list-style:none;
