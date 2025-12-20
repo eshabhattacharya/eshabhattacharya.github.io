@@ -12,6 +12,12 @@
   --mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
+html, body {
+  letter-spacing: 0.01em;
+  line-height: 1.65;
+}
+
+
 *{ box-sizing:border-box; }
 
 html, body{
