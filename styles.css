@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600&display=swap');
 
 :root{
   --bg0: #ffffff;
@@ -13,7 +13,7 @@
   --accent: #111111;
   --accent2: #000000;
 
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --mono: "Recursive", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 
@@ -26,9 +26,9 @@ html, body{
   background:#ffffff;
   color: var(--text);
   font-family: var(--mono);
-  letter-spacing: 0.005em;
-  line-height: 1.55;
-  font-size: 15px;
+  letter-spacing: 0.002em;
+  line-height: 1.52;
+  font-size: 14px;
 }
 
 .container{
@@ -70,7 +70,7 @@ body {
 
 h1, h2{
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
   margin: 0 0 10px;
   text-shadow: none;
 }
@@ -141,7 +141,7 @@ a:hover{
 }
 
 .list li{
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px dashed var(--dash);
 }
 
