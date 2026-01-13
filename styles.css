@@ -60,7 +60,36 @@ body {
 }
 
 
-.header{ margin-bottom: 18px; }
+.header{
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.header .headshot{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.header{
+  padding-right: 150px; /* makes room for the headshot */
+}
+
+@media (max-width: 640px){
+  .header{
+    padding-right: 0;
+  }
+  .header .headshot{
+    position: static;
+    display: block;
+    margin: 0 0 12px 0;
+  }
+}
 
 .kicker{
   font-size: 0.9rem;
