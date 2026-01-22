@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Case for Pennies</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-grid">
+  <div class="container">
+    <header class="header">
+      <div class="kicker">/ ideas · penny-thesis </div>
+      <h1>Justice for Lincoln</h1>
+
+      <nav class="nav">
+        <a href="../index.html">[bio]</a>
+        <a href="../ideas.html">[ideas]</a>
+      </nav>
+
+      <hr class="rule">
+    </header>
+
+    <section class="section">
+      <p>At first glance, the implications of halting penny production are modest: a $56 million taxpayer saving, a nice photo op for the US Mint, and maybe a few too many “cents” puns. But the penny’s disappearance draws attention to a quiet feature hidden in nearly every transaction that may prove to be increasingly important: rounding.</p>
+      <p>Without a one-cent coin, Treasury Department guidance advises businesses to round the final, post-tax total of a cash transaction to the nearest five-cent increment. The result is simple but unusual: the same purchase can resolve to a different final price depending on whether it is paid in cash or electronically, with up to a two-cent difference.  Even assuming regulations prevent retailers from rounding in only one direction (which would explicitly discourage cash payments) this change still introduces additional uncertainty for people paying with physical money.</p>
+      <p>A price that is exact when paid digitally becomes approximate when paid physically. While digital alternatives have gradually been making cash less convenient, eliminating the penny makes cash less *effective*, a change that highlights how much everyday commerce has changed, and what consumers have quietly learned to accept.</p>
+      <p>The likes of dynamic pricing, surge pricing, and personalized discounts have weakened the idea that each product has a single, objective value. Consumers have accepted that prices vary across locations, across sellers, and across time. Eliminating the penny adds another variable, payment method, but with an important distinction: this is the first time price differences appear at the register itself, after the purchasing decision has already been made. </p>
+      <p>At this point, the power to decide whether the purchase is worth it has already been forgone, and the final price of the item is determined by retailer-specific rounding rules that the consumer cannot see or easily account for. While this may seem insignificant, this is the first time that everyday prices of virtually all goods paid in cash have become approximate rather than exact. </p>
+      <p>The idea that the difference between $2.98 and $3.00 can be treated as negligible is fundamentally dangerous because it undermines the importance of precision. Precision matters because it allows anyone to verify the calculations from posted price to final payment. When discrepancies are normalized and we open up the floodgates to fudging numbers, consumers essentially relinquish their ability to reasonably check whether a transaction is correct. The only option left is to trust that the system got it right.  </p>
+      <p>Forget deciphering a utility bill. The days of reading a sign that says, “$1 Lemonade”, handing over a dollar, and receiving a lemonade are effectively over. Even small purchases already require pretty advanced mental math to get from listed price to final total, and we’ll now introduce payment-method-specific rounding regulations and retailer policies. The implicit instruction is clear— just close your eyes, trust the receipt, and swipe the card.</p>
+      <p>As transactions accumulate layers— taxes, fees, and now rounding rules— consumers are being asked to trust the system more frequently and for less purpose. Eliminating the penny doesn’t create the shift, but exposes it by bringing system-level complexity into the smallest, most familiar transactions.</p>
+      <p>Eroding the usefulness of cash doesn’t just introduce uncertainty at the register; it forces reliance on private intermediaries. Today, physical money is the only way to pay without first trusting a centralized, private third-party to process, record, and settle a transaction. Cash may be issued by the government, but using it does not require trusting a private corporation to authorize, process, or remain solvent for a transaction to occur. </p>
+      <p>Credit cards, checks, gift cards, and payment apps, on the other hand, require trusting a third-party intermediary before value can move. History offers reminders that even large, seemingly stable institutions can fail, leaving plenty of unusable Sears gift cards and Lehman Brothers receivables as a reminder of the risks inherent to trusting any third-party intermediary. If cash becomes harder to use accurately because exact change no longer exists, the option to use it weakens. </p>
+      <p></p>
+      <p></p>
+      <p></p>
+      
+      <!-- end article -->
+    </section>
+
+    <p class="footer">© <span id="year"></span> Esha Bhattacharya</p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
