@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project: A Decentralized Marketplace for Ideas </title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-grid">
+  <div class="container">
+    <header class="header">
+      <div class="kicker">/ projects · eureka-fi </div>
+      <h1>Project: A Decentralized Marketplace for Ideas</h1>
+
+      <nav class="nav">
+        <a href="../index.html">[bio]</a>
+        <a href="../ideas.html">[ideas]</a>
+      </nav>
+
+      <hr class="rule">
+    </header>
+
+    <section class="section">
+      <p><em>Disclaimer: Honestly, I only started this project because I 1) wanted to learn more about structuring incentives and 2) had ideas but nowhere to put them. The solution to the latter was to make this site so I figured the best solution to the former is just to try and build it. Any feedback or thoughts would be much appreciated!</em></p>
+      <h2>Prediction Markets’ Success</h2
+      <p>The accuracy of prediction markets demonstrates a powerful idea: when beliefs are expressed through structured incentives, even with small amounts of economic weight, they can aggregate information more accurately than even expert analysis. </p>
+      <p>Their remarkable track record in predicting event outcomes is not driven by large capital flows or particularly poignant analysis, but because they have structured their financial incentives to aggregate and weight large sets of diverse information into a single value. Because participants are forced to price their own conviction and update beliefs over time, the system can consistently and successfully extract signals from unstructured, unanalyzed datasets without requiring centralized judgment.</p>
+      
+      <h2>What if, instead of predicting the outcome of a game, participants predict the viability of an idea? </h2>
+      <p>Right now, investing in early-stage companies generally means either a career in venture capital or angel investing, but neither necessarily implies deep expertise in the industries they fund. Paradoxically, by the time a startup reaches a seed round, it is already expected to have a prototype, product validation, and proof-of-concept, leaving the earliest and most uncertain stage of ideation to be funded almost exclusively by friends and family. As a result, failures early on are often not because of merit, but because funding relies on personal savings and access to friends and family with capital to spend. </p>
+      <p>Within this pre-seed stage lies another structural mismatch. Venture capital is increasingly optimized for scaling consensus, not discovering truth. As pattern-matching and social proof are rewarded over differentiation, novel ideas that fall outside existing narratives struggle to surface. At the same time, startup culture romanticizes the lone founder and discourages collaboration for fear of idea theft, reputational risk, asymmetric risk, and a lack of structured feedback channels. The idea that legitimate founders should already have clarity, conviction, and momentum leaves little room for collaboration or early, low-stakes feedback. </p>
+      <p>As a result, founders in the earliest stage of ideation face a coordination problem in two critical areas: funding and feedback. From pre-IPO marketplaces and Venture DAOs to shows like Shark Tank, the world has repeatedly gestured toward the lack of infrastructure for coordinating belief, capital, and participation during the earliest stages of a business.  </p>
+      <p>In practice, people have begun using social media as an informal workaround for this need. Small business owners post about their work, engage with comments, and iterate publicly. Entire companies have emerged from viral threads and the exponential impacts of online support has flipped traditional marketing on its head. However, social media algorithms are fundamentally optimized for cheap attention and advertising revenue, with few mechanisms to differentiate or reward deeper forms of participation. </p>
+      
+      <h2>Eureka!</h2>
+      <p>The pitch: A decentralized marketplace that gives founders a platform to test, refine, and fund their ideas long before traditional funding gets involved and offers the public a way to interact with and bet on their favorites in a game-like, social way. </p>
+      <p>In this model, anyone can mint an “idea” NFT that can be supported and commented on with micro-investments via tokens, with customizable time periods before payout. People can also participate in the execution of ideas as they gain traction, getting paid out based on execution milestones. </p>
+      <p>The ideas don’t necessarily need to be huge gamechangers, maybe it’s a cool new app, a local policy, research paper thesis, Taylor Swift fan project, genius invention like a ring with floss in it, Steelers tailgate in NYC before the Jets game, etc. Maybe it’s just a belief or statement that doesn’t need execution and is just there to spark discussion and reach a collective solution. Regardless, this would provide a platform for coordination at the earliest stages of ideation and aggregate scattered intuition, expertise, and curiosity into a real-time signal about whether an idea is worth pursuing. </p>
+      <p>The key innovation in this model is incentive design. Instead of collapsing participation into comments and likes that are optimized for attention and advertising revenue, the system can explicitly direct engagement toward project outcomes. With customizable token structures, the platform and even users can adjust the rails of participation far beyond the binary “engagement equals ad revenue” structure that dominates internet networks today. </p>
+      <p>This gives early founders a credible alternative to both the funding vacuum before seed stage and social media’s extractive engagement model. In doing so, this system also creates a transparent, participatory mechanism for discovering which ideas are worth pursuing and feedback from the masses when founders need it most. </p>
+      <h2>How it Works</h2>
+      <p>An internal, game-like-token powers voting, commenting, and supporting, making participation abundant and non-extractive but just costly enough to guard against spam. The majority of users will log on as supporters, commenting and iterating on ideas while spending micro-investments to bet on things they care and/or know about. </p>
+      <p>Participants can also mint ideas and spark discussion, with both reputational and financial safeguards against spam. As ideas generate discussion and micro-investments, their creator can customize investment rails, such as the option to invest in a pool that can only be used for a specified purpose. </p>
+      <p>Finally, those with relevant skillsets can choose ideas to participate on, joining the idea and executing tasks to receive milestone payouts governed by a separate, cash-settled token held in escrow. Using smart contracts to customize incentive structures and payouts, the platform can facilitate coordination among builders, supporters, and executors, all without centralized control.</p>
+
+      <h2>So What?</h2>
+      <p>This separation allows for low stakes, social participation at the edges while remaining economically credible at the core, and a seamless way to transition back and forth between the two. Early supporters are rewarded for conviction, creators for resonance, and executors for delivery, each aligned by engineering the incentives to participate. </p>
+      <p>By removing centralized curation and replacing it with incentive-aligned participation, tokenization allows participants to operate at multiple levels of seriousness on one platform. Anyone can participate socially and experimentally, but the system offers a credible path to real capital, labor, and funding. </p>
+      <p>The broader implication is a shift in how innovation is coordinated. Instead of billion-dollar companies and their algorithms deciding which ideas get attention and billion-dollar investors deciding which get funded, real people can finally get involved transparently and without centralized decision-making. By blending game-like participation with trusted economic rails, onchain systems can create an alternative form of online engagement where ideas and beliefs can be collectively developed. </p>
+      <p>A decentralized marketplace for ideas is not just a product, it’s an experiment in whether onchain systems and their opportunity to customize incentives can publicize better ideas, allocate effort more efficiently, and reshape collaboration across the world.</p>
+      <p>[Demo coming soon]</p>
+      
+      <!-- end article -->
+    </section>
+
+    <p class="footer">© <span id="year"></span> Esha Bhattacharya</p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
