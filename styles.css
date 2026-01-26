@@ -14,6 +14,7 @@
   --accent2: #000000;
 
   --mono: "Recursive", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --link-blue: #1a3d6f;
 }
 
 
@@ -206,6 +207,37 @@ a:hover{
   display: inline-block; /* or block */
 }
 
+/* Make directory titles look clickable */
+.list a{
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;          /* remove default underline */
+  position: relative;
+}
+
+/* Underline + dark blue on hover */
+.list a:hover{
+  color: var(--link-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.list li{
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--dash);
+  cursor: pointer;
+}
+
+.list li:hover a{
+  color: var(--link-blue);
+}
+
+.list a:focus-visible{
+  outline: 2px solid var(--link-blue);
+  outline-offset: 3px;
+}
+
 
 .hero{
   display: flex;
@@ -221,6 +253,7 @@ a:hover{
   border: 1px solid var(--line);
   border-radius: 10px;
 }
+
 
 
   
