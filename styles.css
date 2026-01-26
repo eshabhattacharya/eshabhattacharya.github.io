@@ -187,8 +187,25 @@ a:hover{
 
 .meta{
   margin-top: 6px;
-  font-
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.55);   /* or: color: var(--muted); if you have it */
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
 }
+
+.blurb{
+  margin: 8px 0 6px;
+  color: rgba(0,0,0,0.68);   /* or var(--text) with lower opacity */
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.list a{
+  color: var(--text);
+  font-weight: 600;
+  display: inline-block; /* or block */
+}
+
 
 .hero{
   display: flex;
