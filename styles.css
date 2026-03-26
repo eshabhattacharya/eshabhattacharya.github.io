@@ -13,10 +13,13 @@
   --accent: #111111;
   --accent2: #000000;
 
-  --mono: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --mono: "Courier Prime", "Courier New", Courier, monospace;
   --link-blue: #1a3d6f;
 }
 
+* {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+}
 
 *{ box-sizing:border-box; }
 
@@ -122,9 +125,7 @@ h2{ font-size: 1.0rem; }
 
 .nav a{
   color: var(--text);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
   padding-bottom: 0;
   border-bottom: none;
 }
