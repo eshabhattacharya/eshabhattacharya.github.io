@@ -159,11 +159,14 @@ h2{
 }
 
 .section{
-  padding: 18px 0 10px;
+  padding: 14px 0 10px;
   border-top: 1px solid var(--line);
 }
 
-.section:first-of-type{ border-top: none; }
+.section:first-of-type{
+  padding-top: 4px;
+  border-top: none;
+}
 
 a{
   color: var(--text);
@@ -243,9 +246,11 @@ a:hover{
 }
 
 .list li{
-  padding: 16px 0;
+  padding: 20px 0;
   border-bottom: 1px dashed var(--dash);
   cursor: pointer;
+  line-height: 1.65;
+  margin-bottom: 10px;
 }
 
 .list li:hover a{
