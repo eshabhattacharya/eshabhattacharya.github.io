@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 :root{
   --bg0: #ffffff;
@@ -13,7 +13,7 @@
   --accent: #111111;
   --accent2: #000000;
 
-  --mono: "Recursive", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --mono: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   --link-blue: #1a3d6f;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 h1, h2{
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.015em;
   margin: 0 0 10px;
   text-shadow: none;
